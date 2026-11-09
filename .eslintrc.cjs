@@ -18,3 +18,13 @@ module.exports = {
   },
   plugins: [
     'react',
+  ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  ignorePatterns: ['build', 'dist', 'node_modules'],
+  rules: {
+    'prefer-template': 0,
+    'react/no-children-prop': 0,
