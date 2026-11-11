@@ -38,3 +38,13 @@ module.exports = {
     'import/extensions': 0,
   },
   overrides: [
+    {
+      files: ['vite.config.js', '*.cjs', '**/*.test.{js,jsx}', 'src/setupTests.js'],
+      env: {
+        node: true,
+      },
+      rules: {
+        'react/react-in-jsx-scope': 'off',
+        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+      },
+    },
